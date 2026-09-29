@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Каталог аксессуаров для рабочего места: клавиатуры, мыши и коврики.">
+  <title>Каталог — ShopProject</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="site-header__logo" href="index.html">ShopProject</a>
+
+      <nav class="site-nav" aria-label="Основная навигация">
+        <ul class="site-nav__list">
+          <li><a class="site-nav__link" href="index.html">Главная</a></li>
+          <li><a class="site-nav__link" href="catalog.html" aria-current="page">Каталог</a></li>
+          <li><a class="site-nav__link" href="order.html">Заявка</a></li>
+          <li><a class="site-nav__link" href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <nav class="breadcrumbs" aria-label="Хлебные крошки">
+        <a href="index.html">Главная</a> / <span>Каталог</span>
+      </nav>
+      <h1>Каталог</h1>
+
+      <aside class="info-block">
+        <h2 class="info-block__title">Категория</h2>
+        <p class="info-block__text">Аксессуары для рабочего места</p>
+      </aside>
+
+      <section>
+        <h2 class="section__title">Товары</h2>
+        <div class="product-grid">
+          <article class="product-card">
+            <img class="product-card__image" src="images/keyboard.svg" alt="Механическая клавиатура Keyra K1">
+            <div class="product-card__content">
+              <h3 class="product-card__title">Механическая клавиатура Keyra K1</h3>
+              <p class="product-card__text">Компактная клавиатура формата 75% с тихими переключателями и белой подсветкой.</p>
+              <p class="product-card__price">5&nbsp;990&nbsp;₽</p>
+              <div class="product-card__actions">
+                <a class="button button--secondary" href="product-keyboard.html">Подробнее</a>
+                <a class="button" href="order.html?product=%D0%9C%D0%B5%D1%85%D0%B0%D0%BD%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D0%BA%D0%BB%D0%B0%D0%B2%D0%B8%D0%B0%D1%82%D1%83%D1%80%D0%B0%20Keyra%20K1">Заказать</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <img class="product-card__image" src="images/mouse.svg" alt="Беспроводная мышь Glide M2">
+            <div class="product-card__content">
+              <h3 class="product-card__title">Беспроводная мышь Glide M2</h3>
+              <p class="product-card__text">Лёгкая беспроводная мышь с датчиком 3200 DPI и тихими кнопками.</p>
+              <p class="product-card__price">2&nbsp;490&nbsp;₽</p>
+              <div class="product-card__actions">
+                <a class="button button--secondary" href="product-mouse.html">Подробнее</a>
+                <a class="button" href="order.html?product=%D0%91%D0%B5%D1%81%D0%BF%D1%80%D0%BE%D0%B2%D0%BE%D0%B4%D0%BD%D0%B0%D1%8F%20%D0%BC%D1%8B%D1%88%D1%8C%20Glide%20M2">Заказать</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <img class="product-card__image" src="images/mat.svg" alt="Коврик для стола Deskmat L">
+            <div class="product-card__content">
+              <h3 class="product-card__title">Коврик для стола Deskmat L</h3>
+              <p class="product-card__text">Большой коврик 80×30 см с прошитыми краями и нескользящей основой.</p>
+              <p class="product-card__price">1&nbsp;290&nbsp;₽</p>
+              <div class="product-card__actions">
+                <a class="button button--secondary" href="product-mat.html">Подробнее</a>
+                <a class="button" href="order.html?product=%D0%9A%D0%BE%D0%B2%D1%80%D0%B8%D0%BA%20%D0%B4%D0%BB%D1%8F%20%D1%81%D1%82%D0%BE%D0%BB%D0%B0%20Deskmat%20L">Заказать</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <p class="site-footer__text">&copy; 2026 ShopProject. Учебный проект.</p>
+      <p class="site-footer__text">Дисциплина: Фронтенд и бэкенд разработка</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-labelledby="title desc">
+  <title id="title">Механическая клавиатура Keyra K1</title>
+  <desc id="desc">Схематичное изображение компактной механической клавиатуры на светлом фоне</desc>
+  <rect width="800" height="500" fill="#eef5ff"/>
+  <ellipse cx="400" cy="425" rx="290" ry="26" fill="#c9d6e8"/>
+  <rect x="120" y="150" width="560" height="250" rx="24" fill="#003f86"/>
+  <rect x="120" y="150" width="560" height="250" rx="24" fill="none" stroke="#0057b8" stroke-width="4"/>
+  <rect x="152" y="176" width="34" height="34" rx="6" fill="#f2b84b"/>
+  <rect x="194" y="176" width="34" height="34" rx="6" fill="#ffffff"/>
+  <rect x="236" y="176" width="34" height="34" rx="6" fill="#ffffff"/>
+  <rect x="278" y="176" width="34" height="34" rx="6" fill="#ffffff"/>
+  <rect x="320" y="176" width="34" height="34" rx="6" fill="#ffffff"/>
+  <rect x="362" y="176" width="34" height="34" rx="6" fill="#ffffff"/>
+  <rect x="404" y="176" width="34" height="34" rx="6" fill="#ffffff"/>
+  <rect x="446" y="176" width="34" height="34" rx="6" fill="#ffffff"/>
+  <rect x="488" y="176" width="34" height="34" rx="6" fill="#ffffff"/>
+  <rect x="530" y="176" width="34" height="34" rx="6" fill="#ffffff"/>
+  <rect x="572" y="176" width="34" height="34" rx="6" fill="#ffffff"/>
+  <rect x="614" y="176" width="34" height="34" rx="6" fill="#ffffff"/>
+  <rect x="152" y="218" width="34" height="34" rx="6" fill="#ffffff"/>
+  <rect x="194" y="218" width="34" height="34" rx="6" fill="#ffffff"/>
+  <rect x="236" y="218" width="34" height="34" rx="6" fill="#ffffff"/>
+  <rect x="278" y="218" width="34" height="34" rx="6" fill="#ffffff"/>
+  <rect x="320" y="218" width="34" height="34" rx="6" fill="#ffffff"/>
+  <rect x="362" y="218" width="34" height="34" rx="6" fill="#ffffff"/>
+  <rect x="404" y="218" width="34" height="34" rx="6" fill="#ffffff"/>
+  <rect x="446" y="218" width="34" height="34" rx="6" fill="#ffffff"/>
+  <rect x="488" y="218" width="34" height="34" rx="6" fill="#ffffff"/>
+  <rect x="530" y="218" width="34" height="34" rx="6" fill="#ffffff"/>
+  <rect x="572" y="218" width="34" height="34" rx="6" fill="#ffffff"/>
+  <rect x="614" y="218" width="34" height="34" rx="6" fill="#ffffff"/>
+  <rect x="152" y="260" width="34" height="34" rx="6" fill="#ffffff"/>
+  <rect x="194" y="260" width="34" height="34" rx="6" fill="#ffffff"/>
+  <rect x="236" y="260" width="34" height="34" rx="6" fill="#ffffff"/>
+  <rect x="278" y="260" width="34" height="34" rx="6" fill="#ffffff"/>
+  <rect x="320" y="260" width="34" height="34" rx="6" fill="#ffffff"/>
+  <rect x="362" y="260" width="34" height="34" rx="6" fill="#ffffff"/>
+  <rect x="404" y="260" width="34" height="34" rx="6" fill="#ffffff"/>
+  <rect x="446" y="260" width="34" height="34" rx="6" fill="#ffffff"/>
+  <rect x="488" y="260" width="34" height="34" rx="6" fill="#ffffff"/>
+  <rect x="530" y="260" width="34" height="34" rx="6" fill="#ffffff"/>
+  <rect x="572" y="260" width="34" height="34" rx="6" fill="#ffffff"/>
+  <rect x="614" y="260" width="34" height="34" rx="6" fill="#f2b84b"/>
+  <rect x="152" y="302" width="34" height="34" rx="6" fill="#ffffff"/>
+  <rect x="194" y="302" width="34" height="34" rx="6" fill="#ffffff"/>
+  <rect x="236" y="302" width="34" height="34" rx="6" fill="#ffffff"/>
+  <rect x="278" y="302" width="34" height="34" rx="6" fill="#ffffff"/>
+  <rect x="320" y="302" width="34" height="34" rx="6" fill="#ffffff"/>
+  <rect x="362" y="302" width="34" height="34" rx="6" fill="#ffffff"/>
+  <rect x="404" y="302" width="34" height="34" rx="6" fill="#ffffff"/>
+  <rect x="446" y="302" width="34" height="34" rx="6" fill="#ffffff"/>
+  <rect x="488" y="302" width="34" height="34" rx="6" fill="#ffffff"/>
+  <rect x="530" y="302" width="34" height="34" rx="6" fill="#ffffff"/>
+  <rect x="572" y="302" width="34" height="34" rx="6" fill="#ffffff"/>
+  <rect x="614" y="302" width="34" height="34" rx="6" fill="#ffffff"/>
+  <rect x="152" y="344" width="34" height="34" rx="6" fill="#ffffff"/>
+  <rect x="194" y="344" width="34" height="34" rx="6" fill="#ffffff"/>
+  <rect x="236" y="344" width="34" height="34" rx="6" fill="#ffffff"/>
+  <rect x="278" y="344" width="160" height="34" rx="6" fill="#ffffff"/>
+  <rect x="446" y="344" width="34" height="34" rx="6" fill="#ffffff"/>
+  <rect x="488" y="344" width="34" height="34" rx="6" fill="#ffffff"/>
+  <rect x="530" y="344" width="34" height="34" rx="6" fill="#ffffff"/>
+  <rect x="572" y="344" width="34" height="34" rx="6" fill="#ffffff"/>
+  <rect x="614" y="344" width="34" height="34" rx="6" fill="#ffffff"/>
+</svg>
