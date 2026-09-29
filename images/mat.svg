@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-labelledby="title desc">
+  <title id="title">Коврик для стола Deskmat L</title>
+  <desc id="desc">Схематичное изображение большого коврика для стола с прошитым краем на светлом фоне</desc>
+  <rect width="800" height="500" fill="#eef5ff"/>
+  <ellipse cx="400" cy="400" rx="330" ry="26" fill="#c9d6e8"/>
+  <rect x="80" y="150" width="640" height="230" rx="30" fill="#003f86"/>
+  <rect x="98" y="168" width="604" height="194" rx="20" fill="none" stroke="#eef5ff" stroke-width="3" stroke-dasharray="10 8" opacity="0.75"/>
+  <path d="M130 330 L260 200 M190 340 L330 200 M250 350 L400 200" stroke="#0057b8" stroke-width="10" stroke-linecap="round" opacity="0.8"/>
+  <circle cx="610" cy="265" r="46" fill="#0057b8"/>
+  <circle cx="610" cy="265" r="20" fill="#f2b84b"/>
+</svg>

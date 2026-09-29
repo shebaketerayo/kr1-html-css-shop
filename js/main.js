@@ -1,74 +1,86 @@
-// Получаем модальное окно по id.
 const orderDialog = document.getElementById('order-dialog');
-
-// Получаем все кнопки заказа в карточках товаров.
 const orderButtons = document.querySelectorAll('.product-card__button');
-
-// Получаем кнопку закрытия модального окна.
 const closeDialogButton = document.getElementById('close-order-dialog');
-
-// Получаем скрытое поле, в которое будет записан выбранный товар.
-const selectedProductInput = document.getElementById('selected-product');
-
-// Перебираем все кнопки «Заказать».
-orderButtons.forEach((button) => {
-  button.addEventListener('click', () => {
-    // Получаем название товара из data-атрибута.
-    const productName = button.dataset.product;
-
-    // Записываем название товара в скрытое поле формы.
-    selectedProductInput.value = productName;
-
-    // Открываем модальное окно.
-    orderDialog.showModal();
-  });
-});
-
-// Закрываем модальное окно по кнопке «Закрыть».
-closeDialogButton.addEventListener('click', () => {
-  orderDialog.close();
-});
-
-// Получаем форму заявки.
 const orderForm = document.getElementById('order-form');
-
-// Получаем сообщение об успешной отправке.
+const selectedProductInput = document.getElementById('selected-product');
+const selectedProductLabel = document.getElementById('selected-product-label');
+const topicSelect = document.getElementById('order-topic');
 const successMessage = document.getElementById('success-message');
 
-// Обрабатываем отправку формы.
-orderForm.addEventListener('submit', (event) => {
-  // Отменяем стандартную отправку формы,
-  // потому что backend пока не подключён.
-  event.preventDefault();
+function setSelectedProduct(productName) {
+  if (selectedProductInput) {
+    selectedProductInput.value = productName;
+  }
 
-  // Сбрасываем предыдущие признаки ошибок.
-  const formElements = Array.from(orderForm.elements);
+  if (selectedProductLabel) {
+    selectedProductLabel.textContent = productName || 'не выбран';
+  }
 
-  formElements.forEach((element) => {
-    if (element.willValidate) {
-      element.removeAttribute('aria-invalid');
-    }
+  if (topicSelect && productName && topicSelect.value === '') {
+    topicSelect.value = 'product';
+  }
+}
+
+if (orderDialog) {
+  orderButtons.forEach((button) => {
+    button.addEventListener('click', () => {
+      setSelectedProduct(button.dataset.product);
+      orderDialog.showModal();
+    });
   });
 
-  // Проверяем встроенные HTML-ограничения формы.
-  if (!orderForm.checkValidity()) {
+  if (closeDialogButton) {
+    closeDialogButton.addEventListener('click', () => {
+      orderDialog.close();
+    });
+  }
+}
+
+const productFromUrl = new URLSearchParams(window.location.search).get('product');
+
+if (productFromUrl) {
+  setSelectedProduct(productFromUrl);
+}
+
+let messageTimer;
+
+function showSuccessMessage() {
+  successMessage.hidden = false;
+
+  clearTimeout(messageTimer);
+  messageTimer = setTimeout(() => {
+    successMessage.hidden = true;
+  }, 6000);
+}
+
+if (orderForm && successMessage) {
+  orderForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+
+    const formElements = Array.from(orderForm.elements);
+
     formElements.forEach((element) => {
-      if (element.willValidate && !element.checkValidity()) {
-        element.setAttribute('aria-invalid', 'true');
+      if (element.willValidate) {
+        element.removeAttribute('aria-invalid');
       }
     });
 
-    // Показываем стандартные сообщения браузера.
-    orderForm.reportValidity();
-    return;
-  }
+    if (!orderForm.checkValidity()) {
+      formElements.forEach((element) => {
+        if (element.willValidate && !element.checkValidity()) {
+          element.setAttribute('aria-invalid', 'true');
+        }
+      });
 
-  // Показываем сообщение об успешной отправке.
-  successMessage.hidden = false;
+      orderForm.reportValidity();
+      return;
+    }
 
-  // Очищаем форму.
-  orderForm.reset();
+    showSuccessMessage();
+    orderForm.reset();
 
-  // Закрываем модальное окно.
-  orderDialog.close();
-});
+    if (orderDialog && orderDialog.open) {
+      orderDialog.close();
+    }
+  });
+}
