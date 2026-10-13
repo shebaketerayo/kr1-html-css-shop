@@ -142,19 +142,21 @@ a:hover {
 }
 
 .hero {
-  padding: 64px 0;
-  background-color: var(--color-hero);
+  padding: 120px 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("../images/hero.jpg") center / cover no-repeat;
+  color: var(--color-white);
+  text-align: center;
 }
 
 .hero__title {
   margin: 0 0 var(--space-md);
-  font-size: 36px;
+  font-size: 44px;
   line-height: 1.2;
 }
 
 .hero__text {
   max-width: 60%;
-  margin: 0 0 var(--space-lg);
+  margin: 0 auto var(--space-lg);
 }
 
 .advantages-list {
@@ -422,7 +424,7 @@ a:hover {
 
 @media (max-width: 720px) {
   .hero {
-    padding: 40px 0;
+    padding: 64px 0;
   }
 
   .hero__title {
